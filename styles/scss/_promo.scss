@@ -1,0 +1,88 @@
+@import "_mixins";
+
+.promo {
+  width: 100%;
+  background-color: #393939;
+  border-bottom: 1px, solid, #ffffff;
+
+  &__container {
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 100px;
+
+      &__above {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #393939;
+
+        &__div {
+          &__title {
+            @include Font(60px, 1px, 90px, 700, #ffffff);
+            margin-bottom: 10px;
+
+            span {
+              @include Font(60px, 1px, 90px, 700, orange);
+            }
+          }
+          &__hr {
+            border: 3px solid #f87c34;
+          }
+          &__text {
+            @include Font(40px, 1px, 47px, 600, #ffffff);
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+          &__span {
+            @include Font(20px, 1px, 24px, 600, #f87c34);
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+
+      &__below {
+        align-self: flex-end;
+        display: flex;
+
+        &__btns {
+          margin-inline: 20px;
+          width: 200px;
+          height: 46px;
+          background-color: orange;
+          border-radius: 24px 24px 0px 0px;
+        }
+      }
+    }
+
+    &__images {
+        height: 100%;
+        display: flex; 
+        justify-content: center;
+        margin-right: 20px;
+      
+
+
+        img {
+           height:380px;
+           max-width:400px;
+           align-self: center;
+           
+       
+        }
+    }
+  }
+
+  &__logo {
+    width: 160px;
+    height: 150px;
+    margin-right: 10px;
+  }
+}

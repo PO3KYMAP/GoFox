@@ -1,0 +1,32 @@
+
+@import "_mixins";
+
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(240, 231, 215);
+    color: black;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@import "_header";
+@import "_promo";
+@import "_welcoming";
+@import "_services";
+@import "_range";
+@import "_form";

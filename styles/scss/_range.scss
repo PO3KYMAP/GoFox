@@ -1,0 +1,38 @@
+.range {
+    
+    &__title {
+        @include Font(42px, 1px, 57px, 600, #000000);
+        text-align: center;
+    }
+
+    &__container {
+        max-width: 1180px;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
+         
+        &__items {
+            background-color: white;
+            text-align: center;
+           
+
+            &__above {
+                display: flex;
+                justify-content: space-around;
+
+                &__text {
+                    @include Font(20px, 1px, 27px, 400, #000000); 
+                }
+
+                &__icon {
+                    height: 35px;
+                    width: 30px;
+                    align-self:center;
+                }
+            }
+
+        }
+    }
+}

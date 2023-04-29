@@ -1,0 +1,43 @@
+@import '_mixins';
+
+.header {
+    &__container { 
+        @include Font(20px, 1px, 150%, 500, #FFFFFF);
+        height: 96px;
+        background-color: #393939;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 20px;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 100%;
+        margin-left: 100px;
+        max-height: auto;
+        display: block;
+    }
+
+}
+
+.nav {
+    &__list__container {
+        width: auto;
+        margin: 0;
+    }
+
+    &__list {
+        display:flex;
+        padding-inline: 20px;
+        justify-content: space-around;
+    }
+
+    &__list__item {
+        margin-inline: 20px;
+        list-style-type: none;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+    }
+}
+

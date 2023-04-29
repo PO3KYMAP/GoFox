@@ -1,0 +1,50 @@
+.form {
+    &__container {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        &__textcontainer {
+
+            &__title {
+@include Font(22px, 1px, 33px, 600, #000000);
+            }
+             &__span {
+@include Font(18px, 1px, 33px, 400, #454545);
+            }
+             &__text {
+@include Font(22px, 1px, 33px, 600, #000000);
+            }
+        }
+
+        &__formcontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                @include Font(30px, 1px, 49px, 600, #000000);
+            }
+
+            &__form {
+                display: flex;
+                flex-direction: column;
+
+                #input1 {
+                    width: 545px;
+                    height: 245px;
+                    border-radius: 15px;
+                    background: #FCFCFC;
+                    border: 1px solid #CDCDCD;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    padding: 12px 20px;
+  resize: none;
+  align-self: flex-start;
+                }
+            }
+        }
+    }
+}
+

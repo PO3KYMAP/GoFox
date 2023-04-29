@@ -1,0 +1,15 @@
+$FontSize: 64px;
+$FontColor: #1b1a1a;
+$LetterSpacing: 1px;
+$LineHeight: 70px;
+$FontWeight: 400;
+$Height: promo__container__items(height);
+
+@mixin Font($FontSize, $LetterSpacing, $LineHeight, $FontWeight, $FontColor) {
+  font-family: "Poppins", sans-serif;
+  font-size: $FontSize;
+  color: $FontColor;
+  letter-spacing: $LetterSpacing;
+  line-height: $LineHeight;
+  font-weight: $FontWeight;
+}
