@@ -24,6 +24,8 @@
         background-color: #393939;
 
         &__div {
+          display: flex;
+          flex-direction: column;
           &__title {
             @include Font(60px, 1px, 90px, 700, #ffffff);
             margin-bottom: 10px;
@@ -34,6 +36,7 @@
           }
           &__hr {
             border: 3px solid #f87c34;
+            width: 100%
           }
           &__text {
             @include Font(40px, 1px, 47px, 600, #ffffff);
@@ -42,8 +45,6 @@
           }
           &__span {
             @include Font(20px, 1px, 24px, 600, #f87c34);
-            align-items: center;
-            text-align: center;
           }
         }
       }
@@ -71,11 +72,9 @@
 
 
         img {
-           height:380px;
-           max-width:400px;
+           height:360px;
+           max-width:360px;
            align-self: center;
-           
-       
         }
     }
   }

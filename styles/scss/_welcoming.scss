@@ -1,98 +1,101 @@
 .welcoming {
-    width: 100%;
-    &__container {
-        max-width: 1180px;
-        margin: 0 auto;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
+  width: 100%;
 
-        &__title {
-            @include Font(42px, 1px, 57px, 600, #000000);
-            text-align: center;
+  &__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
-            &__span {
-                @include Font(42px, 1px, 57px, 600, orange);
-            }
-        }
+    &__title {
+      @include Font(42px, 1px, 57px, 600, #000000);
+      text-align: center;
 
-        &__discription{
-            display: flex;
-            justify-content: space-around;
-            border-color: orange;
-            border-style: solid;
-            border-width: 5px;
-
-            &__title {
-                @include Font(36px, 1px, 49px, 600, #000000);
-            }
-
-            &__text {
-                @include Font(24px, 1px, 33px, 400, #000000);
-            }
-
-            &__logo {
-                display: flex;
-                justify-content: center;
-                width: 282px;
-                height: 282px;
-                border-radius: 282px;
-                background-color: #393939;
-                align-self: center;
-                text-align: center;
-                margin-top: 30px;
-
-                &__img {
-                height: 115px;
-                width: 90px;
-                align-self: center;
-                }
-
-                &__title {
-                    @include Font(40px, 1px, 60px, 700, #000000);
-                    align-self: center
-                }
-
-                &__span {
-                    @include Font(40px, 1px, 60px, 700, orange);
-                }
-            }
-        }
-    
-        &__mission {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10px;
-
-            &__textcontainer {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                &__text {
-                    @include Font(18px, 1px, 33px, 500, #000000);
-                }
-            }
-
-            &__sidecontainer {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-
-                &__title {
-                    @include Font(60px, 1px, 82px, 500, orange);
-                    margin-bottom: 0px
-                }
-
-                &__text {
-                    @include Font(24px, 1px, 33px, 600, #000000);
-                }
-            }
-        }
-    
+      &__span {
+        @include Font(42px, 1px, 57px, 600, orange);
+      }
     }
 
+    &__discription {
+      display: flex;
+      justify-content: space-around;
+      border-color: orange;
+      border-style: solid;
+      border-width: 5px;
 
+      &__title {
+        @include Font(36px, 1px, 49px, 600, #000000);
+      }
 
+      &__text {
+        @include Font(24px, 1px, 33px, 400, #000000);
+      }
 
+      &__logo {
+        display: flex;
+        justify-content: center;
+        width: 282px;
+        height: 282px;
+        border-radius: 282px;
+        background-color: #393939;
+        align-self: center;
+        text-align: center;
+        margin-top: 30px;
 
+        &__img {
+          height: 115px;
+          width: 90px;
+          align-self: center;
+        }
+
+        &__title {
+          @include Font(40px, 1px, 60px, 700, #000000);
+          align-self: center;
+        }
+
+        &__span {
+          @include Font(40px, 1px, 60px, 700, orange);
+        }
+      }
+    }
+
+    &__mission {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      &__textcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__text {
+          @include Font(18px, 1px, 33px, 500, #000000);
+        }
+      }
+
+      &__sidecontainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        &__title {
+          @include Font(60px, 1px, 82px, 500, orange);
+          margin-bottom: 0px;
+        }
+
+        &__text {
+          @include Font(24px, 1px, 33px, 600, #000000);
+          text-align: center;
+        }
+      }
+    }
+  }
 }

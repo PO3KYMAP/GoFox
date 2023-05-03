@@ -1,0 +1,110 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #F87C34;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+       max-width: 1180px;
+       margin: 0 auto;
+
+        &__top {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+
+            &__btn {
+                background: #494949;
+border: 2px solid #FFFFFF;
+border-radius: 360px;
+width: 265px;
+height: 65px;
+            }
+
+            &__contactscontainer {
+                &__text {
+                    display: flex;
+                    justify-content: center;
+                    @include Font(20px, 1px, 150%, 500, #FFFFFF);
+                    margin-left: 0px;
+                    &__img {
+                        max-width: 40px;
+                        max-height: 40px;
+                        margin-inline: 5px;
+                        text-align: center
+                    }
+                }
+
+                &__title {
+                    @include Font(30px, 1px, 49px, 500, #FFFFFF);
+                }
+            }
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                &__title {
+                    @include Font(42px, 1px, 57px, 600, #FFFFFF);
+                    text-align: center
+                }
+
+            
+            }
+
+            &__center {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap:30px;
+            }
+
+            &__right {
+                display: flex;
+                justify-content: center;
+                &__iframe {
+                    margin-top: 32px;
+                }
+            }
+        }
+
+        hr {
+            width: 100%;
+            border: 2px solid #FFFFFF;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+
+            &__div1 {
+                display: flex;
+                justify-content: space-around;
+                @include Font(20px, 1px, 33px, 400, #FFFFFF);
+                &__ul {
+                    display: flex;
+                    list-style-type: none;
+                    padding-left: 0px;
+
+                    &__li {
+                        margin-inline: 10px;
+                    }
+                }
+
+            }
+
+            &__bottomtext {
+                @include Font(20px, 1px, 33px, 400, #FFFFFF);
+                text-align: center;
+            }
+        }
+    }
+}
+
+#center__container {
+    justify-content: center;
+}
+#center__container {
+    margin-top: 100px;
+}

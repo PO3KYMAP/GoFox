@@ -1,0 +1,441 @@
+@import "_mixins";
+
+@media (max-width: 1180px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header {
+        &__container {
+            @include Font(15px, 1px, 150%, 500, #ffffff);
+            padding-inline: 15px;
+        }
+
+        &__logo {
+            margin-left: 10px;
+            max-width: 100px;
+        }
+    }
+
+    .nav {
+        &__list {
+            padding-inline: 15px;
+
+            &__item {
+                margin-inline: 15px;
+            }
+        }
+    }
+
+    .promo {
+        &__container {
+            height: 350px;
+            display: unset;
+
+            &__items {
+                margin-left: 30px;
+                display: flex;
+                justify-content: space-between;
+
+                &__above {
+                    justify-content: space-around;
+
+                    &__div {
+                        &__title {
+                            // @include Font(50px, 1px, 75px, 600, #ffffff);
+                            text-align: center;
+
+                            //   span {
+                            //     @include Font(50px, 1px, 75px, 600, orange);
+                            //   }
+                        }
+
+                        &__hr {
+                            border-width: 2px;
+                        }
+
+                        // &__text {
+                        //   @include Font(25px, 1px, 32px, 500, #ffffff);
+                        // }
+
+                        &__span {
+                            // @include Font(15px, 1px, 19px, 500, #f87c34);
+                            align-self: center;
+                        }
+                    }
+                }
+
+                &__below {
+                    margin-top: 50px;
+                    width: 100%;
+                    justify-content: center;
+
+                    &__btns {
+                        margin-inline: 15px;
+                        width: 200px;
+                    }
+                }
+
+                &__images {
+                    display: none;
+                    margin-right: 15px;
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .range {
+        &__container {
+            max-width: 900px;
+            grid-gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .form {
+        &__container {
+            padding: 20px 30px;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: #f87c34;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+
+            &__top {
+                &__btn {
+                    width: 200px;
+                    height: 50px;
+                }
+
+                &__contactscontainer {
+                    &__text {
+                        @include Font(15px, 1px, 150%, 500, #ffffff);
+
+                        &__img {
+                            max-width: 30px;
+                            max-height: 30px;
+                        }
+                    }
+
+                    &__title {
+                        @include Font(23px, 1px, 42px, 500, #ffffff);
+                    }
+                }
+
+                &__left {
+                    &__title {
+                        @include Font(31px, 1px, 46px, 600, #ffffff);
+                    }
+                }
+
+                &__right {
+                    &__iframe {
+                        margin-top: 32px;
+                        max-width: 280px;
+                        height: auto;
+                    }
+                }
+            }
+
+            &__bottom {
+                &__div1 {
+                    @include Font(15px, 1px, 28px, 400, #ffffff);
+                }
+
+                &__bottomtext {
+                    @include Font(15px, 1px, 28px, 400, #ffffff);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .header {
+        &__container {
+            @include Font(12px, 1px, 150%, 500, #ffffff);
+            padding-inline: 15px;
+        }
+
+        &__logo {
+            margin-left: 10px;
+            max-width: 80px;
+        }
+    }
+
+    .nav {
+        &__list {
+            padding-inline: 15px;
+
+            &__item {
+                margin-inline: 10px;
+            }
+        }
+    }
+
+    .promo {
+        &__container {
+            height: 300px;
+
+            &__items {
+                margin-left: 0px;
+
+                &__above {
+                    justify-content: space-around;
+
+                    &__div {
+                        &__title {
+                            @include Font(40px, 1px, 60px, 500, #ffffff);
+                            text-align: center;
+
+                            span {
+                                @include Font(40px, 1px, 60px, 500, orange);
+                            }
+                        }
+
+                        &__hr {
+                            border-width: 2px;
+                        }
+
+                        &__text {
+                            @include Font(23px, 1px, 25px, 400, #ffffff);
+                            text-align: center;
+                        }
+
+                        &__span {
+                            @include Font(20px, 1px, 19px, 500, #f87c34);
+                            align-self: center;
+                        }
+                    }
+                }
+
+                &__below {
+                    &__btns {
+                        margin-inline: 15px;
+                        width: 180px;
+                    }
+                }
+
+                &__images {
+                    margin-right: 15px;
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .welcoming {
+        width: 100%;
+
+        &__container {
+            max-width: 700px;
+
+            &__title {
+                @include Font(32px, 1px, 47px, 500, #000000);
+                text-align: center;
+
+                &__span {
+                    @include Font(32px, 1px, 47px, 500, orange);
+                }
+            }
+
+            &__discription {
+
+                &__title {
+                    @include Font(26px, 1px, 39px, 500, #000000);
+                }
+
+                &__text {
+                    @include Font(14px, 1px, 23px, 400, #000000);
+                }
+
+                &__logo {
+                    width: 202px;
+                    height: 202px;
+                    margin-top: 0px;
+
+                    &__img {
+                        height: 85px;
+                        width: 70px;
+                    }
+
+                    &__title {
+                        @include Font(30px, 1px, 50px, 600, #000000);
+                    }
+
+                    &__span {
+                        @include Font(30px, 1px, 50px, 600, orange);
+                    }
+                }
+            }
+
+            &__mission {
+
+                &__textcontainer {
+
+                    &__text {
+                        @include Font(14px, 1px, 29px, 500, #000000);
+                    }
+                }
+
+                &__sidecontainer {
+                    &__title {
+                        @include Font(45px, 1px, 77px, 500, orange);
+                        margin-bottom: 0px;
+                    }
+
+                    &__text {
+                        @include Font(18px, 1px, 27px, 500, #000000);
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        height: auto;
+        &__title {
+            @include Font(32px, 1px, 47px, 500, #ffffff);
+        }
+
+        &__container {
+            margin-bottom: 20px;
+            &__items {
+                width: 205px;
+                height: 180px;
+                margin-inline: 10px;
+
+                &__title {
+                    @include Font(20px, 1px, 31px, 400, #000000);
+
+                }
+                &__img {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                div {
+                    p {
+                        color: #000000;
+                        font-size: 30px;
+                        margin: 0;
+                        font-weight: 1000;
+                    }
+                }
+            }
+        }
+    }
+
+    #services__container__items__title {
+        margin-bottom: 0px;
+    }
+}
+
+
+.range {
+    &__title {
+        @include Font(32px, 1px, 47px, 500, #000000);
+        text-align: center;
+    }
+    &__container {
+        max-width: 700px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.form {
+    &__container {
+        padding: 10px 20px;
+    }
+}
+swiper-container {
+   display: none;
+   
+  }
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #f87c34;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+
+        &__top {
+            gap: 30px;
+            &__btn {
+                width: 100px;
+                height: 40px;
+                color: #ffffff
+            }
+
+            &__contactscontainer {
+                &__text {
+                    @include Font(12px, 1px, 100%, 500, #ffffff);
+                    margin-top: 5px;
+
+                    &__img {
+                        max-width: 30px;
+                        max-height: 30px;
+                    }
+                }
+
+                &__title {
+                    @include Font(18px, 1px, 32px, 500, #ffffff);
+                }
+            }
+
+            &__left {
+                &__title {
+                    @include Font(22px, 1px, 36px, 600, #ffffff);
+                }
+            }
+
+            &__right {
+                &__iframe {
+                    margin-top: 32px;
+                    max-width: 280px;
+                    height: auto;
+                }
+            }
+        }
+
+        &__bottom {
+            &__div1 {
+                @include Font(12px, 1px, 25px, 400, #ffffff);
+            }
+
+            &__bottomtext {
+                @include Font(12px, 1px, 25px, 400, #ffffff);
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 576px;
+        margin: 0 auto;
+    }
+}
