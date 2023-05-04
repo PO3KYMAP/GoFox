@@ -9,6 +9,10 @@
         justify-content: space-between;
         padding-inline: 20px;
         align-items: center;
+
+        &__hidden-btn {
+            display: none;
+        }
     }
 
     &__logo {

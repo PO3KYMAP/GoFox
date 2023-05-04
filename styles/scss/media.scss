@@ -438,4 +438,427 @@ swiper-container {
         max-width: 576px;
         margin: 0 auto;
     }
+    .welcoming {
+        width: 100%;
+
+        &__container {
+            max-width: 576px;
+
+            &__title {
+                @include Font(24px, 1px, 47px, 500, #000000);
+                text-align: center;
+
+                &__span {
+                    @include Font(26px, 1px, 47px, 500, orange);
+                }
+            }
+
+            &__discription {
+
+                &__title {
+                    @include Font(20px, 1px, 39px, 500, #000000);
+                }
+
+                &__text {
+                    @include Font(13px, 1px, 23px, 400, #000000);
+                    margin-left: 10px;
+                }
+
+                &__logo {
+                    width: 202px;
+                    height: 202px;
+                    margin-top: 0px;
+
+                    &__img {
+                        height: 75px;
+                        width: 60px;
+                    }
+
+                    &__title {
+                        @include Font(28px, 1px, 50px, 600, #000000);
+                    }
+
+                    &__span {
+                        @include Font(28px, 1px, 50px, 600, orange);
+                    }
+                }
+            }
+            &__mission {
+                padding: 10px;
+            }
+        }
+    }
+    .services {
+        height: auto;
+        &__title {
+            @include Font(28px, 1px, 47px, 500, #ffffff);
+        }
+
+        &__container {
+            margin-bottom: 20px;
+            &__items {
+                &__title {
+                    @include Font(18px, 1px, 31px, 400, #000000);
+                    margin-bottom: 10px;
+
+                }
+            }
+        }
+    }
+    .range {
+    
+        &__title {
+            @include Font(28px, 1px, 40px, 500, #000000);
+            text-align: center;
+        }
+    
+        &__container {
+            max-width: 576px;
+            padding: 5px;
+             
+            &__items {
+                &__above {
+                    &__text {
+                        @include Font(16px, 1px, 27px, 400, #000000); 
+                    }
+    
+                    &__icon {
+                        height: 35px;
+                        width: 30px;
+                        align-self:center;
+                    }
+                }
+    
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: #f87c34;
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            max-width: 576px;
+    
+            &__top {
+                gap: 20px;
+                &__btn {
+                    width: 90px;
+                    height: 30px;
+                    color: #ffffff;
+                    font-size: 12px
+                }
+    
+                &__contactscontainer {
+                    &__text {
+                        @include Font(12px, 1px, 100%, 500, #ffffff);
+                        margin-top: 5px;
+    
+                        &__img {
+                            max-width: 30px;
+                            max-height: 30px;
+                        }
+                    }
+    
+                    &__title {
+                        @include Font(18px, 1px, 32px, 500, #ffffff);
+                    }
+                }
+    
+                &__left {
+                    &__title {
+                        @include Font(20px, 1px, 36px, 600, #ffffff);
+                    }
+                }
+    
+                &__right {
+                    &__iframe {
+                        margin-top: 32px;
+                        max-width: 240px;
+                        height: auto;
+                    }
+                }
+            }
+    
+            &__bottom {
+                &__div1 {
+                    @include Font(12px, 1px, 25px, 400, #ffffff);
+                }
+    
+                &__bottomtext {
+                    @include Font(12px, 1px, 25px, 400, #ffffff);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .header {
+        &__container { 
+            &__hidden-btn {
+                display: flex;
+                justify-content: center;
+                color: #ffffff;
+                background-color: #393939;
+                border-style: none;
+                font-size: 25px;
+            }
+        }
+    }
+    
+    .nav {
+        &__list__container {
+            display: none;
+        }
+    }
+    .welcoming {
+        width: 100%;
+
+        &__container {
+            max-width: 320px;
+
+            &__title {
+                @include Font(18px, 1px, 30px, 400, #000000);
+                text-align: center;
+
+                &__span {
+                    @include Font(18px, 1px, 30px, 400, orange);
+                }
+            }
+
+            &__discription {
+
+                &__title {
+                    @include Font(20px, 1px, 39px, 500, #000000);
+                    margin-left: 20px
+                }
+
+                &__text {
+                    @include Font(13px, 1px, 23px, 400, #000000);
+                    margin-left: 10px;
+                }
+
+                &__logo {
+                    display: none;
+                }
+            }
+            &__mission {
+                &__textcontainer {
+                  &__text {
+                    @include Font(12px, 1px, 20px, 400, #000000);
+                  }
+                }
+          
+                &__sidecontainer {
+                  &__title {
+                    @include Font(30px, 1px, 30px, 400, orange);
+                    margin-bottom: 0px;
+                  }
+          
+                  &__text {
+                    @include Font(15px, 1px, 23px, 400, #000000);
+                    text-align: center;
+                  }
+                }
+              }
+        }
+    }
+    .services {
+        width: 100%;
+        background-color: #f87c34;
+        display: flex;
+        flex-direction: column;
+       height: auto;
+      
+        &__title {
+          @include Font(22px, 1px, 30px, 500, #ffffff);
+        }
+      
+        &__container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
+          grid-gap: 20px;
+
+      
+          &__items {
+            width: 80%;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0 auto;
+      
+            &__title {
+              @include Font(20px, 1px, 25px, 400, #000000);
+              text-align: center;
+              margin-bottom: 10px;
+            }
+            &__img {
+                width: 35px;
+                height: 35px;
+                margin-bottom: 10px;
+              }
+            div {
+              display: flex;
+              justify-content: space-around;
+      
+            
+      
+              p {
+                color: #000000;
+                font-size: 30px;
+                margin: 0;
+                font-weight: 1000;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+      .range {
+    
+        &__title {
+            @include Font(22px, 1px, 40px, 500, #000000);
+            text-align: center;
+        }
+    
+        &__container {
+            max-width: 320px;
+            padding: 5px;
+            grid-template-columns: 1fr;
+             
+            &__items {
+                &__above {
+                    &__text {
+                        @include Font(14px, 1px, 27px, 400, #000000); 
+                    }
+    
+                    &__icon {
+                        height: 30px;
+                        width: 25px;
+                        align-self:center;
+                    }
+                }
+    
+            }
+        }
+    }
+    .form {
+        margin-top: 20px;
+        &__container {
+          width: 100%;
+          position: relative;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+      
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: url("images/bg.jpg") no-repeat center;
+            background-size: cover;
+            filter: blur(50px);
+            z-index: -1;
+          }
+        
+        &__contact-box {
+          max-width: 850px;
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: #fff;
+          box-shadow: 0px 0px 15px 5px #e69363;
+      
+          &__left {
+           display: none;
+          }
+      
+      }
+      
+    }
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #f87c34;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+
+        &__top {
+            gap: 20px;
+            &__btn {
+                width: 90px;
+                height: 30px;
+                color: #ffffff;
+                font-size: 12px
+            }
+
+            &__contactscontainer {
+                &__text {
+                    @include Font(10px, 1px, 100%, 500, #ffffff);
+                    margin-top: 5px;
+
+                    &__img {
+                        max-width: 30px;
+                        max-height: 30px;
+                    }
+                }
+
+                &__title {
+                    @include Font(14px, 1px, 32px, 500, #ffffff);
+                }
+            }
+
+            &__left {
+                &__title {
+                    @include Font(16px, 1px, 36px, 600, #ffffff);
+                }
+            }
+
+            &__right {
+                &__iframe {
+                    display: none;
+                }
+            }
+        }
+
+        &__bottom {
+            padding: 5px;
+            &__div1 {
+                @include Font(8px, 1px, 25px, 400, #ffffff);
+                &__ul {
+
+                    &__li {
+                        margin-inline: 0px;
+                    }
+                }
+            }
+
+            &__bottomtext {
+                @include Font(10px, 1px, 25px, 400, #ffffff);
+            }
+        }
+    }
+}
+      
+
 }
