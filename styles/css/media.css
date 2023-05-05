@@ -134,6 +134,9 @@
   .container {
     max-width: 700px;
   }
+  swiper-container {
+    display: none;
+  }
   .header__container {
     font-family: "Poppins", sans-serif;
     font-size: 12px;
@@ -357,10 +360,6 @@
 
 .form__container {
   padding: 10px 20px;
-}
-
-swiper-container {
-  display: none;
 }
 
 .footer {
@@ -629,6 +628,16 @@ swiper-container {
     max-width: 320px;
     margin: 0 auto;
   }
+  .header__container:hover .nav__list {
+    position: absolute;
+    top: 5%;
+    right: 1px;
+    border-radius: 0px;
+    display: block;
+    margin-inline: 5px;
+    text-align: right;
+    background-color: #272626;
+  }
   .header__container__hidden-btn {
     display: flex;
     justify-content: center;
@@ -638,7 +647,16 @@ swiper-container {
     font-size: 25px;
   }
   .nav__list__container {
+    text-align: right;
+    margin: 0;
+    width: auto;
+  }
+  .nav__list {
     display: none;
+  }
+  .nav__list__item {
+    height: 30px;
+    text-align: right;
   }
   .welcoming {
     width: 100%;

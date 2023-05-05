@@ -165,6 +165,9 @@
     .container {
         max-width: 700px;
     }
+    swiper-container {
+        display: none;
+    }
 
     .header {
         &__container {
@@ -367,10 +370,6 @@
         padding: 10px 20px;
     }
 }
-swiper-container {
-   display: none;
-   
-  }
 
 .footer {
     width: 100%;
@@ -602,6 +601,16 @@ swiper-container {
     }
     .header {
         &__container { 
+            &:hover .nav__list {
+                position: absolute;
+                top: 5%;
+                right: 1px;
+                border-radius: 0px;
+                display: block;
+                margin-inline: 5px;
+                text-align: right;
+                background-color: #272626;
+            }
             &__hidden-btn {
                 display: flex;
                 justify-content: center;
@@ -615,7 +624,16 @@ swiper-container {
     
     .nav {
         &__list__container {
+            text-align: right;
+      margin: 0;
+      width: auto;
+        }
+        &__list {
             display: none;
+            &__item {
+                height: 30px;
+                text-align: right;
+            }
         }
     }
     .welcoming {
