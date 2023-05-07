@@ -350,9 +350,7 @@
     #services__container__items__title {
         margin-bottom: 0px;
     }
-}
-
-
+    
 .range {
     &__title {
         @include Font(32px, 1px, 47px, 500, #000000);
@@ -431,6 +429,9 @@
         }
     }
 }
+}
+
+
 
 @media (max-width: 700px) {
     .container {
@@ -601,15 +602,16 @@
     }
     .header {
         &__container { 
+            position: relative;
             &:hover .nav__list {
                 position: absolute;
                 top: 5%;
-                right: 1px;
+                right: 0;
                 border-radius: 0px;
                 display: block;
                 margin-inline: 5px;
                 text-align: right;
-                background-color: #272626;
+                background-color: #373636;
             }
             &__hidden-btn {
                 display: flex;
